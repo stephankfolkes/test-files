@@ -49,7 +49,7 @@ spec:
             steps {
                 container('shell') {
 			sh 'chmod a+x test.sh'
-		    sh 'bash test.sh'
+		    sh 'cd /tmp && bash $WORKSPACE/test.sh'
 		}
             }
         }
