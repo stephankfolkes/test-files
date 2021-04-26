@@ -16,7 +16,7 @@ kind: Pod
 spec:
   containers:
   - name: shell
-    image: ubuntu
+    image: centos:7
     resources:
       limits:
         cpu: "50m"
