@@ -48,6 +48,7 @@ spec:
         stage('Main') {
             steps {
                 container('shell') {
+			sh 'chmod a+x test.sh'
 		    sh 'bash test.sh'
 		}
             }
